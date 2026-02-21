@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:"Noto Serif", serif;
+}
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #f8f9fa; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header>img{
+    width: 200px;
+}
+header ul{
+    display: flex;
+    list-style-type:none; 
+    gap: 25px;
+}
+
+header a{
+
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease; 
+}
+header a:hover {
+   
+    background: linear-gradient(90deg, rgb(192, 134, 28), yellow,rgb(125, 14, 14));
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+    
+  
+}
+
+
+
+
+/* Custom Spidey Colors */
+:root {
+    --spidey-red: #E62429;
+    --spidey-blue: #001D3D;
+    --spidey-black: #000000;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), 
+                      url('https://www.transparenttextures.com/patterns/carbon-fibre.png');
+}
+
+/* Navbar Styling */
+.spidey-logo {
+    font-weight: 900;
+    letter-spacing: -1px;
+    font-size: 1.5rem;
+}
+.spidey-logo span { color: var(--spidey-red); }
+
+.nav-link:hover {
+    color: var(--spidey-red) !important;
+    transform: translateY(-2px);
+    transition: 0.3s;
+}
+
+/* Hero Section with Animation */
+.hero-section {
+    height: 90vh;
+    background: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(230, 36, 41, 0.2)),
+                url('https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?q=80&w=2070');
+    background-size: cover;
+    background-position: center;
+}
+
+.spidey-title {
+    text-shadow: 4px 4px 0px var(--spidey-blue), 8px 8px 0px #000;
+}
+
+/* Headings */
+.spidey-heading {
+    color: var(--spidey-red);
+    text-transform: uppercase;
+    font-weight: 800;
+    border-left: 5px solid var(--spidey-red);
+    padding-left: 15px;
+}
+
+/* Hover Effects for Cards */
+.spidey-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    position: relative;
+}
+
+.spidey-card:hover {
+    transform: translateY(-15px) rotate(2deg);
+    box-shadow: 0 10px 30px rgba(230, 36, 41, 0.5);
+    border-color: #fff;
+}
+
+/* Skill Icons Animation */
+.skill-card div {
+    transition: 0.3s ease;
+    cursor: default;
+}
+
+.skill-card div:hover {
+    background-color: var(--spidey-red) !important;
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Custom Spidey Button */
+.spidey-btn {
+    border-radius: 0;
+    padding: 12px 30px;
+    font-weight: bold;
+    border: 2px solid transparent;
+}
+
+.spidey-btn:hover {
+    background-color: transparent;
+    border-color: var(--spidey-red);
+    box-shadow: 0 0 20px var(--spidey-red);
+}
+
+/* Mock Mask Animation Placeholder */
+.mask-box {
+    width: 200px;
+    height: 250px;
+    background-color: var(--spidey-red);
+    margin: 0 auto;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); box-shadow: 0 0 30px var(--spidey-red); }
+    100% { transform: scale(1); }
+}
