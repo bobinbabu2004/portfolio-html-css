@@ -2,104 +2,153 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Bobin Babu | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
 
-    <!-- bootstrap cdn -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
-
-
-
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-<p class="font-monospace ">BOBIN <span class="font-monospace text-danger fw-bold">BABU</span></p>
+
+<header>
+    <p class="logo">BOBIN BABU</p>
     <nav>
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contacts</a></li>
         </ul>
     </nav>
 </header>
 
-
-<!-- home -->
+<!-- HOME -->
 <section id="home">
-    <div id="homcontent" >
-    <h2 class="text-center spidey-text mb-5">BOBIN BABU</h2>
+    <div class="home-content" data-aos="fade-right">
+        <h1>Hi, I'm Bobin 👋</h1>
         <p>
-            I am a developer focused on building modern web applications using the 
-            <strong>MERN Stack</strong> (MongoDB, Express, React, Node.js). 
-            Currently, I am also expanding my knowledge into networking and working towards my 
-            
+            MERN Stack Developer building modern and high-performance web applications.
         </p>
         <p>
-            I enjoy the challenge of solving complex problems and turning ideas into 
-            functional, high-performance websites. Whether it's crafting a responsive 
-            front-end or managing databases, I aim for clean and efficient code.
+            Passionate about clean code, responsive design, and scalable systems.
         </p>
     </div>
-    <div id="homeimages" >
-        <img id="spiderman" src="./assests/spiderman.png" alt="">
-     
+
+    <div class="home-image" data-aos="fade-left">
+        <img src="./assests/bobin2.jpeg"
+             alt="Profile Image">
     </div>
-
- </section>
-
-
- <!-- skills -->
-
- <section id="skills" class="py-5 bg-dark text-white">
+</section>
+<section id="skills">
     <div class="container">
-        <h2 class="text-center spidey-font mb-5">MY SUPER POWERS</h2>
-        <div class="row g-4">
-            <div class="col-6 col-md-3 text-center">
-                <div class="skill-card">
-                <p class="mt-2">HTML</p>
-                    <div class="progress">
-                        <div class="progress-bar bg-danger" style="width: 85%"></div>
-                    </div>
+        <h2 class="section-title" data-aos="fade-down">My Skills</h2>
+
+        <div class="skills-wrapper">
+
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="100">
+                <div class="circle" data-percent="85">
+                    <span>85%</span>
                 </div>
+                <h5>HTML</h5>
             </div>
-            <div class="col-6 col-md-3 text-center">
-                <div class="skill-card">
-                    <p class="mt-2">CSS</p>
-                    <div class="progress">
-                        <div class="progress-bar bg-danger" style="width: 80%"></div>
-                    </div>
+
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="200">
+                <div class="circle" data-percent="80">
+                    <span>80%</span>
                 </div>
+                <h5>CSS</h5>
             </div>
-            <div class="col-6 col-md-3 text-center">
-                <div class="skill-card">
-                   
-                    <p class="mt-2">BOOTSTRAP</p>
-                    <div class="progress">
-                        <div class="progress-bar bg-danger" style="width: 90%"></div>
-                    </div>
+
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="300">
+                <div class="circle" data-percent="90">
+                    <span>90%</span>
                 </div>
+                <h5>Bootstrap</h5>
             </div>
-            <div class="col-6 col-md-3 text-center">
-                <div class="skill-card">
-                    <p class="mt-2">TAILWIND</p>
-                    <div class="progress">
-                        <div class="progress-bar bg-danger" style="width: 75%"></div>
-                    </div>
+
+            <div class="skill-box" data-aos="zoom-in" data-aos-delay="400">
+                <div class="circle" data-percent="75">
+                    <span>75%</span>
                 </div>
+                <h5>Tailwind</h5>
             </div>
+
         </div>
     </div>
 </section>
 
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="container">
+        <h2 class="section-title" data-aos="fade-down">Projects</h2>
+
+        <div class="row g-4 mt-4">
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card">
+                    <img src="./assests/Screenshot 2026-02-24 094618.png" alt="">
+                    <div class="p-3">
+                        <h5>Luminar techno lab clone</h5>
+                        <p>clone page luminar technolab built with HTML,CSS,BOOTSTRAP</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card">
+                    <img src="./assests/Screenshot 2026-02-23 133557.png" alt="">
+                    <div class="p-3">
+                        <h5>Paw Talks</h5>
+                        <p>AI concept interface built with HTML, CSS & Bootstrap.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-card">
+                    <img src="./assests/uber.png" alt="">
+                    <div class="p-3">
+                        <h5>Uber Clone</h5>
+                        <p>Responsive ride-booking UI clone project. built with HTML, CSS & Bootstrap. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    AOS.init({
+        duration: 1200,
+        easing: "ease-in-out",
+        once: true
+    });
+});
+</script>
+
+<script>
+document.querySelectorAll('.circle').forEach(function(el){
+    let percent = el.getAttribute('data-percent');
+    el.style.setProperty('--percent', percent);
+});
+</script>
 
 </body>
 </html>
